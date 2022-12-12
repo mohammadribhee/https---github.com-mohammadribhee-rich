@@ -1,0 +1,109 @@
+
+/* grid for in order to split the screen*/
+/*----------------------------------------------*/
+.grid{
+    display: grid;
+   height: 100vh;
+    }
+    .gridAbout--1X2{
+       
+        grid-template-columns: repeat(1,1fr);
+        background-image: url("../img/R_graphic_element.svg");
+        background-size:cover;
+        background-position: right 300px center;
+        background-color: #333;
+        justify-items: center;
+       
+    }
+    @media(min-width: 828px) {
+        .gridAbout--1X2{
+
+            grid-template-columns: repeat(2, 1fr);
+           
+        }
+        #childOne{order:2};
+        #childTwo{order:1};
+}
+/*----------------------------------------------*/
+
+
+/* container which contains the heading and paragraphs*/
+/*----------------------------------------------*/
+.container_paragraph{
+    margin: 20px;
+}
+@media(min-width: 828px) {
+    .container_paragraph{
+        align-items:left;
+        justify-content:center; 
+        justify-self: end;     
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+}
+/*----------------------------------------------*/
+
+/* parentImg Like the container but for one image*/
+/*----------------------------------------------*/
+.parentImg{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin-top: 20px;
+  
+}
+@media(min-width: 828px) {
+    .parentImg{
+        width:100%;
+        align-items: center;
+        justify-content: left;
+       
+    }
+}
+/*----------------------------------------------*/
+
+/* image about us*/
+/*----------------------------------------------*/
+.about_us_image{
+    width: 80%;
+    
+
+}
+@media(min-width: 828px) {
+    .about_us_image{
+        width:50%;
+    }
+}
+/*----------------------------------------------*/
+
+
+/* title */
+/*----------------------------------------------*/
+.about_us_header{
+    color: #927d59;
+}
+@media(min-width: 828px) {
+    .about_us_header{
+        font-size: 24px;
+      
+       
+    }
+}
+/*----------------------------------------------*/
+
+/* paragraphs on the page */
+/*----------------------------------------------*/
+.about_us_paragraph{
+    color:white;
+    text-align: justify;
+    text-justify: inter-word;
+
+}
+@media(min-width: 828px) {
+    .about_us_paragraph{
+        font-size: 12px;
+   
+    }
+}
+/*----------------------------------------------*/

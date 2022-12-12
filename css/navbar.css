@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+}
+
+/* nav bar*/
+/*----------------------------------------------*/
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  box-shadow: 0 4px 4px -4px rgba(0,0,0,.8);
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+.topnav a:hover {
+  background-color: #ffffff;
+  color: #bd8739;
+}
+
+.nav_center_item {
+  display: flex;
+}
+
+.nav_text {
+  display: none;
+}
+
+.ShowOrHideInstagram {
+  display: none;
+}
+
+.ShowOrHidefacebook {
+  display: none;
+}
+
+.ShowOrHideInstagramHover {
+  display: none;
+}
+
+.ShowOrHidefacebookHover {
+  display: none;
+}
+
+.logo {
+  width: 100%;
+}
+.logo img {
+  padding-left: 20px;
+  padding-top: 5px;
+}
+
+@media (min-width: 481px) {
+  .nav_text {
+    display: flex;
+    color: white;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav_text div {
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 0 10px 0 10px;
+    font-size: 18px;
+  }
+  .socialMediaSvg {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+  }
+  .ShowOrHideInstagram {
+    display: block;
+    padding-left: 10px;
+  }
+  .ShowOrHideInstagram:hover {
+    display: none;
+  }
+  .ShowOrHideInstagram:hover + img {
+    cursor: pointer;
+    display: block;
+  }
+  .ShowOrHidefacebook {
+    display: block;
+    padding-left: 10px;
+  }
+  .ShowOrHidefacebook:hover {
+    display: none;
+  }
+  .ShowOrHidefacebook:hover + img {
+    cursor: pointer;
+    display: block;
+  }
+  .ShowOrHideInstagramHover {
+    display: none;
+    padding-left: 10px;
+  }
+  .ShowOrHidefacebookHover {
+    display: none;
+    padding-left: 10px;
+  }
+}
+/*---------------------------------------------  */

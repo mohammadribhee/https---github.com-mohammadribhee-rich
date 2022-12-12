@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rich</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Open+Sans:wght@300;400&family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/slideshow.css" />
+    <link rel="stylesheet" href="css/aboutus.css" />
+    
+    
+  </head>
+<body>
+
+  <!-- navbar -->
+  <!--------------------------------------------->
+  <header>
+   
+            <nav>
+    
+            <div class="topnav">
+              <div class='nav_center_item'>
+        
+       
+       <div class="logo">
+    
+           <img src="svg/logo/logo.svg" alt="logo Real Estate" />
+       </div>
+      
+    
+           <div class="nav_text">
+    
+           <div><a href="#">Rental</a></div> 
+          
+           <a href="#">Purchase</a>
+         
+           </div>
+    
+           <div class="socialMediaSvg">
+    
+       <div>
+    
+          <img class="ShowOrHideInstagram" src="svg/socialMedia/instagram.svg"  alt="logo instagram" />
+           <img class="ShowOrHideInstagramHover" src="svg/socialMedia/instagram_hover.svg" alt="logo instagram hover" />
+       </div>
+    
+       <div>
+    
+    <img class="ShowOrHidefacebook" src="svg/socialMedia/facebook.svg"  alt="logo facebook" />
+     <img class="ShowOrHidefacebookHover" src="svg/socialMedia/facebook_hover.svg" alt="logo facebook hover" />
+    </div>
+    
+    
+          <a href="#menu" class="icon" style="background:#333">
+             <i class="fa fa-thin fa-bars fa-2x"></i>
+          </a>
+           </div>
+    
+          
+    
+              </div>
+            </div>
+        
+              
+        </nav>
+        
+  </header>
+  <!--------------------------------------------->
+
+   <!-- slideShow -->
+  <!--------------------------------------------->
+  <section >
+ 
+    <div class="container" >
+      <div class="mySlides fade">
+
+        <picture >
+          <source  type="image/jpg" media="(min-width:1080px)" srcset="img/desktop.jpg">
+          <source  type="image/jpg" media="(max-width:481px)" srcset="img/mobile.jpg">
+          <img  class="imgCustom" src="img/desktop.jpg">
+        </picture>
+
+      </div>
+      
+      <div class="mySlides fade">
+        
+        <picture >
+          <source type="image/jpg" media="(min-width:1080px)" srcset="img/desktop2.jpg">
+          <source  type="image/jpg" media="(max-width:481px)" srcset="img/mobile2.jpg">
+          <img class="imgCustom" src="img/desktop2.jpg">
+        </picture>
+        
+      </div>
+
+
+<div class="positionItem">
+
+  <div class="temp">
+    <h1 class="Title"></h1>
+    <div class="container_sub_Title"> 
+
+      <div class="horizontal_line_restriction"></div>
+
+ 
+     <h6 class="sub_title"></h6>
+   
+     
+       <div class="horizontal_line_restriction"></div>
+
+     </div>
+  
+  </div>
+
+  <div>
+    <h1 class="Title">Exclusive Spaces<br> For A Lifetime</h1>
+    <div class="container_sub_Title"> 
+
+      <div class="horizontal_line_restriction"></div>
+
+     <hr class="horizontal_line">
+     <h6 class="sub_title">Real Estate And Luxury Properties</h6>
+     <hr class="horizontal_line">
+     
+       <div class="horizontal_line_restriction"></div>
+
+     </div>
+  
+  </div>
+  
+
+  <div class="arrowWithDot">
+
+    <div >
+      <span class="dot" onclick={currentSlide(1)}></span> 
+      <span class="dot" onclick={currentSlide(2)}></span> 
+    </div>
+    
+    <div onclick="scrollWin()" style="cursor: pointer;">
+      <img style="margin-top: 20px;" src="img/arrow.svg"/>
+    </div>
+
+  </div>
+
+
+  </div>
+</div>
+     
+     
+     
+  </section>
+
+ <!--------------------------------------------->
+
+    <!-- about_us -->
+      <!--------------------------------------------->
+     
+        <section class="grid gridAbout--1X2">
+          <div id="childOne" class="parentImg">
+            <img class="about_us_image" src="./img/about_us_picture.png"/>
+          </div>
+          <div id="childTwo" class="container_paragraph">
+            <h1 class="about_us_header">Our Story</h1>
+            <p class="about_us_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere blandit auctor. Duis ultrices convallis justo at elementum. Suspendisse at sem ultricies, ultricies metus ac, euismod justo. Sed viverra, libero ac efficitur ullamcorper, velit est consectetur lectus, as varius nisi erat sed nibh. In tincidunt nil sapien, eget pulvinar velit aliquet id. Nunc nec arcu erat. Nam nec mollis dui, et venenatis lorem.</p>
+            <p class="about_us_paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam ex, perferendis consectetur consequuntur recusandae dignissimos ducimus alias commodi ut quia non tenetur possimus labore esse aliquam.</p>
+          </div>
+        </section>
+    
+      <!--------------------------------------------->
+
+ <script src="js/SlideShow.js"></script>
+ <script src="js/sliddown.js"></script>
+</body>
+</html>
